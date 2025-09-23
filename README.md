@@ -6,7 +6,14 @@ Le télérupteur Legrand Ref. 1 991 21 Drivia ne remplisse pas mon cahier des ch
 J'ai un bon vieux télérupteur à bobine, avec lequel il est possible d'avoir des témoins visuels. (LED)
 L'autre avantage, c'est qu'il n'y a aucun câblage à modifier.
 
-## Liste des composants lien
+## Liste des composants
+
+Détail dans le ficier ibom.html
+
+[µP ESP32H2 SuperMini (x1)](https://fr.aliexpress.com/item/1005007235112528.html)
+[Relais HF49FD (x1) HF49FD-005-1H11](https://fr.aliexpress.com/item/1005005163929430.html)
+
+Pour le moment le circuit est maintenu chez moi avec cette boite, dans une GTL. Prendre la version 50-100mm suffit. https://fr.aliexpress.com/item/32624897936.html
 
 ## Home Assistant Template
 
