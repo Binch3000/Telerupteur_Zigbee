@@ -9,9 +9,8 @@ L'autre avantage, c'est qu'il n'y a aucun câblage à modifier.
 ## Liste des composants
 
 Détail dans le ficier ibom.html
-
-[µP ESP32H2 SuperMini (x1)](https://fr.aliexpress.com/item/1005007235112528.html)
-[Relais HF49FD (x1) HF49FD-005-1H11](https://fr.aliexpress.com/item/1005005163929430.html)
+- [µP ESP32H2 SuperMini (x1)](https://fr.aliexpress.com/item/1005007235112528.html)
+- [Relais HF49FD (x1) HF49FD-005-1H11](https://fr.aliexpress.com/item/1005005163929430.html)
 
 Pour le moment le circuit est maintenu chez moi avec cette boite, dans une GTL. Prendre la version 50-100mm suffit. https://fr.aliexpress.com/item/32624897936.html
 
@@ -57,9 +56,18 @@ The Legrand remote switch Ref. 1 991 21 Drivia doesn't meet my specifications.
 I have a good old coil remote switch, which can be equipped with visual indicators (LEDs).
 The other advantage is that there's no wiring to modify.
 
-## List of components link
+## Component List
 
-## On/Off template
+Details in the ibom.html file
+- [µP ESP32H2 SuperMini (x1)](https://fr.aliexpress.com/item/1005007235112528.html)
+- [HF49FD Relay (x1) HF49FD-005-1H11](https://fr.aliexpress.com/item/1005005163929430.html)
+
+For now, the circuit is maintained at home with this box, in a GTL. The 50-100mm version is sufficient. https://fr.aliexpress.com/item/32624897936.html
+
+## Home Assistant Template
+
+Modify the template according to your needs.
+At home, the device is called ECL_Couloir. You will need to replace "ecl_couloir" (x3) with your name.
 
 ```
 template:
