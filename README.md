@@ -10,15 +10,15 @@ template:
       - name: "ECL_Couloir"
         unique_id: ecl_couloir
         state: >
-          {{ is_state('binary_sensor.binch_cie_telerupteur_zone_ias', 'off') }}
+          {{ is_state('binary_sensor.ecl_couloir_zone_ias', 'off') }}
         turn_off:
           service: switch.toggle
           target:
-            entity_id: switch.binch_cie_telerupteur
+            entity_id: switch.ecl_couloir
         turn_on:
           service: switch.toggle
           target:
-            entity_id: switch.binch_cie_telerupteur
+            entity_id: switch.ecl_couloir
 
 Reste à faire en fonction des demandes:
 
