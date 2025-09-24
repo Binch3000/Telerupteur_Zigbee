@@ -16,6 +16,11 @@ Détail dans le ficier ibom.html
 
 Pour le moment le circuit est maintenu chez moi avec cette boite, dans une GTL. Prendre la version 50-100mm suffit. https://fr.aliexpress.com/item/32624897936.html
 
+## Schéma
+- Câblage
+
+- Installation perso
+
 ## Home Assistant Template
 
 Modifier le template selon vos besoin.
@@ -67,6 +72,11 @@ Details in the ibom.html file
 - [HF49FD Relay (x1) HF49FD-005-1H11](https://fr.aliexpress.com/item/1005005163929430.html)
 
 For now, the circuit is maintained at home with this box, in a GTL. The 50-100mm version is sufficient. https://fr.aliexpress.com/item/32624897936.html
+
+## Diagram
+- Wiring
+
+- Custom Installation
 
 ## Home Assistant Template
 
