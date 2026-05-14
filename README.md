@@ -1,7 +1,7 @@
 # Telerupteur ZigBee FR
 Carte de commande pour le contrôle d'un télérupteur avec retour d'état de l'éclairage.
 
-![Image ZHA](ZHA_Telerupteur_Zigbee.png)
+![Image ZHA](ZHA_Telerupteur_Zigbee_V2.png)
   
 ## Pourquoi
 Le télérupteur Legrand Drivia 1.991.21 ne remplis pas mon cahier des charges.
@@ -34,7 +34,7 @@ J'ai la possibilité d'expédier une carte vierge ou même prêt à l'utilisatio
 # ZigBee Remote Switch EN
 Control board for controlling a remote switch with lighting status feedback.
 
-![Image ZHA](ZHA_Telerupteur_Zigbee.png)
+![Image ZHA](ZHA_Telerupteur_Zigbee_V2.png)
 
 ## Why
 The Legrand Drivia 1.991.21 remote switch doesn't meet my requirements.
