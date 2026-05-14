@@ -1,12 +1,13 @@
 # Telerupteur ZigBee FR
-Carte de commande pour le contrôle d'un télérupteur avec retour d'état du contact.
+Carte de commande pour le contrôle d'un télérupteur avec retour d'état de l'éclairage.
 
 ![Image ZHA](ZHA_Telerupteur_Zigbee.png)
   
 ## Pourquoi
-Le télérupteur Legrand Ref. 1 991 21 Drivia ne remplisse pas mon cahier des charges.
-J'ai un bon vieux télérupteur à bobine, avec lequel il est possible d'avoir des témoins visuels. (LED)
-L'autre avantage, c'est qu'il n'y a aucun câblage à modifier.
+Le télérupteur Legrand Drivia 1.991.21 ne remplis pas mon cahier des charges.
+J'ai un bon vieux télérupteur à bobine, avec lequel il est possible d'avoir des témoins visuels sur chaque bouton-poussoir. (LED)
+L'autre avantage, c'est qu'il se monte comme un bouton-poussoir à l'emplacement voulu.
+Il faut également récupérer une alimentation (la même que le télérupteur) ainsi que la puissance de l'éclairage.  
 
 ## Liste des composants
 
@@ -18,52 +19,28 @@ Pour le moment le circuit est maintenu chez moi avec cette boite, dans une GTL. 
 
 ## Schéma
 - Câblage
-
 - Installation perso
-
-## Home Assistant Template
-
-Modifier le template selon vos besoin.
-Chez moi l'appareil porte le nom de ECL_Couloir. Il faudra remplacer les "ecl_couloir" (x3) par votre dénomination.
-
-```
-template:
-  #Bouton + lumière Telerupteur
-  - light:
-      - name: "ECL_Couloir"
-        unique_id: ecl_couloir
-        state: >
-          {{ is_state('binary_sensor.ecl_couloir_zone_ias', 'off') }}
-        turn_off:
-          service: switch.toggle
-          target:
-            entity_id: switch.ecl_couloir
-        turn_on:
-          service: switch.toggle
-          target:
-            entity_id: switch.ecl_couloir
-```
 
 ## Évolution :
 En fonction des demandes, il sera possible de continuer à développer le projet.
 Ceci n'est que quelques idées que j'avais en tête.
 
 - Création d'une boite à imprimer en 3D
-- Quirk ZHA
 - Mise à jour par OTA
 
 ## Divers
 J'ai la possibilité d'expédier une carte vierge ou même prêt à l'utilisation selon vos besoins.
 
 # ZigBee Remote Switch EN
-Control board for controlling a remote switch with contact status feedback.
+Control board for controlling a remote switch with lighting status feedback.
 
 ![Image ZHA](ZHA_Telerupteur_Zigbee.png)
 
 ## Why
-The Legrand remote switch Ref. 1 991 21 Drivia doesn't meet my specifications.
-I have a good old coil remote switch, which can be equipped with visual indicators (LEDs).
-The other advantage is that there's no wiring to modify.
+The Legrand Drivia 1.991.21 remote switch doesn't meet my requirements.
+I have a good old-fashioned coil-type remote switch, which allows for visual indicators on each push button (LEDs).
+Another advantage is that it can be mounted like a push button in the desired location.
+It also requires a power supply (the same as the remote switch) and the power supply for the lighting.
 
 ## Component List
 
@@ -75,38 +52,13 @@ For now, the circuit is maintained at home with this box, in a GTL. The 50-100mm
 
 ## Diagram
 - Wiring
-
 - Custom Installation
-
-## Home Assistant Template
-
-Modify the template according to your needs.
-At home, the device is called ECL_Couloir. You will need to replace "ecl_couloir" (x3) with your name.
-
-```
-template:
-  #Bouton + lumière Telerupteur
-  - light:
-      - name: "ECL_Couloir"
-        unique_id: ecl_couloir
-        state: >
-          {{ is_state('binary_sensor.ecl_couloir_zone_ias', 'off') }}
-        turn_off:
-          service: switch.toggle
-          target:
-            entity_id: switch.ecl_couloir
-        turn_on:
-          service: switch.toggle
-          target:
-            entity_id: switch.ecl_couloir
-```
 
 ## Evolution:
 Depending on demand, it will be possible to continue developing the project.
 These are just a few ideas I had in mind.
 
 - Creation of a 3D printed box
-- Quirk ZHA
 - OTA updates
 
 ## Miscellaneous
